@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LIFE AND DEATH OF ACTORS</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
+	<link rel="stylesheet" href="./style/style.css">
+	
+	<script src="../d3.js"></script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+	<script defer type="text/javascript" src="src/index.js"></script>
+	
+</head>
+<body>
+	<header>
+		<h1>LIFE AND DEATH OF 52,711 ACTORS</h1>
+		<div id="sp-legend">
+			<text style="color: #9e003f">Drama</text>
+			<text style="color: #f2be62">Comedy</text>
+			<text style="color: #015fc2">Action</text>
+			<text style="color: #749600">Horror</text>
+			<text style="color: #a300c8">Crime</text>
+			
+			<text style="color: #f34b00">Adventure</text>
+			<text style="color: #79d4e2">Animation</text>
+			<text style="color: #8bd96d">Thriller</text>
+			<text style="color: #ff60cf">Romance</text>
+			<text style="color: #7bd8b1">Biography</text>
+
+			<text style="color: #a292ff">Family</text>
+			<text style="color: #016692">Sci-Fi</text>
+			<text style="color: #019a9d">Western</text>
+			<text style="color: #ed87ff">Musical</text>
+			<text style="color: purple">Fantasy</text>
+			
+			<text style="color: #00ad7d">Mystery</text>
+			<text style="color: #2a5b00">War</text>
+			<text style="color: #ffacac">History</text>
+			<text style="color: #625100">Film-Noir</text>
+			<text style="color: #dcd0cc">Sport</text>
+		</div>
+		<button id="search-btn">SEARCH ACTOR</button>
+	</header>
+	
+		<!-- INTRO PAGE -->
+		<div id="scatter-plot"></div>
+
+		<!-- SEARCH FORM -->
+		<div id="search-your-actor">
+					<form id="search-form">
+							<h3>YOUR FAVORITE ACTOR</h3>
+							<input type="text" id="name" placeholder="name of actor" required>
+							<input type="submit" value="search">
+					</form>
+		</div>
+
+		<!-- MAP -->
+		<div id="bio-cont"></div>
+		<div id="label"></div>
+		<div id="map"></div>
+
+		<!-- DONUT -->
+		<div id="cause-of-death"></div>
+		<div id="donut-one-one">
+			<div id="donut-one"></div>
+			<div id="donut-one-title"></div>
+		</div>
+		<div id="donut-two-two">
+			<div id="donut-two"></div>
+			<div id="donut-two-title"></div>
+		</div>
+
+		<div id="tooltip" class="hidden">
+			<p><strong>Cause of Death</strong></p>
+			<p><span id="value"></span></p>
+		</div>
+	
+	
+		
+	<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>	
+	<script>
+		
+
+	</script>
+	</body>
+</html>
