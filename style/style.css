@@ -1,0 +1,218 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+    background-color: #242424;
+    font-family: "Oswald";
+}
+h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 96px;
+    font-weight: 1000;
+}
+
+#sp-legend{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sp-legend text {
+    margin: 0 10px 0 10px;
+}
+#search-btn {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #999999;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+#scatter-plot {
+    width: 80%;
+    margin: 30px auto 100px auto;
+}
+
+#map { 
+    display: none;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: -1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#search-your-actor {
+    display: none;
+    width: 600px;
+    margin: 200px auto 300px auto;
+    padding: 30px;
+    background: #666666;
+    border: solid #ffffff;
+    border-width: 5px;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+#search-form h3{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 26px;
+}
+#search-form input {
+    display: block;
+    margin: 12px auto 12px auto;
+    padding: 8px 28px;
+    border: solid #999999;
+    border-width: 3px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #999999;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999999;
+    opacity: 1; /* Firefox */
+}
+#search-form input[type="text"]:focus {
+    border-color: #333333;
+}
+#search-form input[type="submit"] {
+    display: block;
+    margin: 12px auto;
+    padding: 9px 20px;
+    border: none;
+    background-color: #999999;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+#search-form input[type="submit"]:hover {
+    background-color: #d3d3d3;
+}
+#search-form input[type="submit"]:focus {
+    background-color: #000000;
+}
+#search-form div {
+    margin: 18px auto;
+}
+
+#no-actor-match p{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #ffffff;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+#bio-cont {
+    display: none;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    right: 100px;
+    z-index: 100;
+    
+    width: 400px;
+    height: 400px;
+    margin: 300px auto;
+    padding: 30px;
+    background: #666666;
+    border: solid #ffffff;
+    border-width: 5px;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #ffffff;
+
+    overflow-y: scroll;
+}
+#bio-cont h2{
+    margin-top: 0px
+}
+
+#bio{
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#label {
+    position: absolute;
+    top: 52%;
+    left: 47%; 
+    color: white;
+}
+.labels {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#click {
+    text-decoration: underline;
+}
+
+
+#cause-of-death p {
+    color: white;
+    font-size: 24px;
+}
+
+#donut-one-one, #donut-two-two {
+    width: 700px;
+    display: inline-block;
+}
+#donut-one svg {
+    margin-bottom: 0px;
+}
+#donut-two svg {
+    margin-bottom: 0px;
+}
+
+   
+#tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip p {
+    margin: 0;
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#donut-one-title, #donut-two-title {
+    color: white;
+    margin-top: 0px;
+}
+#donut-one-title h3 {
+    margin-top: -40px;
+}
+#donut-two-title h3 {
+    margin-top: -40px;
+}
