@@ -26,7 +26,7 @@ function showForm(){
 
 
 
-d3.json("./data/13_actorDeathsAdded.json")
+d3.json("../data/13_actorDeathsAdded.json")
   .then(function(data) {
     dataset = data;
     //console.log(dataset)
@@ -122,7 +122,7 @@ d3.json("./data/13_actorDeathsAdded.json")
       })
   });
 
-d3.json("./data-cleaning/13_actorDeathsAdded.json")
+d3.json("../data/13_actorDeathsAdded.json")
       .then(function(data) {
           console.log(data)
               
@@ -285,8 +285,8 @@ const w = 700
 const h = 700
 function showDonut(match){  
   Promise.all([ 
-    d3.json("./data-cleaning/14_deathCount.json"),
-    d3.json("./data-cleaning/15_deathCountsByGenre.json")
+    d3.json("../data/14_deathCount.json"),
+    d3.json("../data/15_deathCountsByGenre.json")
   ])
   .then(function(files) {
     const deathCount = files[0];
