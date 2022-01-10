@@ -26,7 +26,7 @@ function showForm(){
 
 
 
-d3.json("./data-cleaning/13_actorDeathsAdded.json")
+d3.json("./data/13_actorDeathsAdded.json")
   .then(function(data) {
     dataset = data;
     //console.log(dataset)
